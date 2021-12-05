@@ -7,9 +7,18 @@
   </head>
 
   <body>
-    <h1>
-      Hello World, we are software developers!
+    <h1 id="title">
+      freeCodeCamp Survey Form
     </h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label>Name</label>
+      <input id="name" type="text" name="myname" placeholder="Enter your name" />
+      <label>Email</label>
+      <input id="email" type="email" pattern=".+@gmail\.co" placeholder="Enter your Email" />
+      <label>Age</label>
+      <input id="number" type="number" min="10" max="50" placeholder="Age" />
+    </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
