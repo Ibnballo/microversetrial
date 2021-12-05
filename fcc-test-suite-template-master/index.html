@@ -12,13 +12,31 @@
     </h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
-      <label>Name</label>
+      <label id="name-label">Name</label>
       <input id="name" type="text" name="myname" placeholder="Enter your name" />
-      <label>Email</label>
+      <label id="email-label">Email</label>
       <input id="email" type="email" pattern=".+@gmail\.co" placeholder="Enter your Email" />
-      <label>Age</label>
+      <label id="number-label">Age</label>
       <input id="number" type="number" min="10" max="50" placeholder="Age" />
     </form>
+
+    <label for="role">Which option best describes your current role?:</label>
+    <input type="text">
+    <select name="roles" id="dropdown">
+      <option value="student">Students</option>
+      <option value="fulltimejob">Fulltime Job</option>
+      <option value="fulltimelearner">Fulltime learner</option>
+      <option value="prefernottosay">Prefer not to say</option>
+      <option value="other">Others</option>
+    </select>
+  <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+  <input type="radio" name="Definitely" id="recommend">
+  <input type="radio" name="Maybe" id="recommend">
+  <input type="radio" name="Not Sure" id="recommend">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button id="submit">
+        Submit
+    </button>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
